@@ -45,39 +45,7 @@ describe('async actions', () => {
         {
           package: {
             name: 'react',
-            scope: 'unscoped',
-            version: '17.0.2',
-            description:
-              'React is a JavaScript library for building user interfaces.',
-            keywords: ['react'],
-            date: '2021-03-22T21:56:19.536Z',
-            links: {
-              npm: 'https://www.npmjs.com/package/react',
-              homepage: 'https://reactjs.org/',
-              repository: 'https://github.com/facebook/react',
-              bugs: 'https://github.com/facebook/react/issues',
-            },
-            publisher: { username: 'gaearon', email: 'dan.abramov@gmail.com' },
-            maintainers: [
-              { username: 'sebmarkbage', email: 'sebastian@calyptus.eu' },
-              { username: 'gaearon', email: 'dan.abramov@gmail.com' },
-              { username: 'acdlite', email: 'npm@andrewclark.io' },
-              { username: 'brianvaughn', email: 'briandavidvaughn@gmail.com' },
-              { username: 'fb', email: 'opensource+npm@fb.com' },
-              { username: 'trueadm', email: 'dg@domgan.com' },
-              { username: 'sophiebits', email: 'npm@sophiebits.com' },
-              { username: 'lunaruan', email: 'lunaris.ruan@gmail.com' },
-            ],
           },
-          score: {
-            final: 0.5839988295515375,
-            detail: {
-              quality: 0.5244079859960027,
-              popularity: 0.8857421916744859,
-              maintenance: 0.3333333333333333,
-            },
-          },
-          searchScore: 100000.63,
         },
       ],
     };
