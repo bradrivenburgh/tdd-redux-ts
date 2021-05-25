@@ -6,12 +6,15 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "@types/fetch-mock": "^7.3.3",
     "@types/jest": "^26.0.23",
     "@types/node": "^12.20.13",
     "@types/react": "^17.0.6",
     "@types/react-dom": "^17.0.5",
     "@types/react-redux": "7.1.15",
     "axios": "0.21.1",
+    "jest-fetch-mock": "^3.0.3",
+    "node-fetch": "^2.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "7.2.2",
@@ -46,6 +49,10 @@
     ]
   },
   "devDependencies": {
+    "@types/node-fetch": "^2.5.10",
+    "@types/redux-mock-store": "^1.0.2",
+    "fetch-mock": "^9.11.0",
+    "fetch-mock-jest": "^1.5.1",
     "redux-mock-store": "^1.5.4"
   }
 }
