@@ -9,7 +9,7 @@ const RepositoriesList: React.FC = () => {
     (state) => state.repositories
   ); // gets state from store; select state we need
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     searchRepositories(term);
   };
@@ -24,7 +24,15 @@ const RepositoriesList: React.FC = () => {
         <input value={term} onChange={onChange} />
         <button>Search</button>
       </form>
-      <ul></ul>
+      {error && <h3>Error: {error}</h3>}
+      {loading && <h3>Loading...</h3>}
+      <ul>
+        {!error &&
+          !loading &&
+          data.map((name) => {
+            return <li key={name}>{name}</li>;
+          })}
+      </ul>
     </div>
   );
 };

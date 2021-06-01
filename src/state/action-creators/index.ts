@@ -1,5 +1,4 @@
 import fetch from 'node-fetch';
-import { URL, URLSearchParams } from 'url';
 import { Dispatch } from 'redux';
 import { ActionType } from '../action-types';
 import { Action } from '../actions';
@@ -14,9 +13,8 @@ export const searchRepositories = (term: string) => {
       url.search = new URLSearchParams(params).toString();
 
       let response = await fetch(url);
-      
-      let data = await response.json();
 
+      let data = await response.json();
       const names = data.objects.map((result: any) => {
         return result.package.name;
       });
